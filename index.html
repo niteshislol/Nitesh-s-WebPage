@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculators</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <!-- <nav>
+            <ul>
+                <li><a href="#" class="logo">Financial Calculators</a></li>
+                <li><a href="#">Returns Calculator</a></li>
+                <li><a href="#">Compounding Calculator</a></li>
+            </ul>
+        </nav> -->
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Calculate Your Financial Future</h1>
+            <p>Easy-to-use calculators for informed decisions</p>
+            <button class="cta">Get Started</button>
+        </section>
+        <section class="calculators">
+            <div class="calculator-container">
+                <h2>Returns Calculator</h2>
+                <form>
+                    <label for="principal">Principal Amount:</label>
+                    <input type="number" id="principal" required>
+                    <label for="rate">Rate of Return (%):</label>
+                    <input type="number" id="rate" required>
+                    <label for="time">Time (years):</label>
+                    <input type="number" id="time" required>
+                    <button class="calculate-button">Calculate</button>
+                </form>
+                <div id="returns-result"></div>
+            </div>
+            <div class="calculator-container">
+                <h2>Compounding Calculator</h2>
+                <form>
+                    <label for="principal-compounding">Principal Amount:</label>
+                    <input type="number" id="principal-compounding" required>
+                    <label for="rate-compounding">Rate of Return (%):</label>
+                    <input type="number" id="rate-compounding" required>
+                    <label for="time-compounding">Time (years):</label>
+                    <input type="number" id="time-compounding" required>
+                    <label for="frequency">Compounding Frequency:</label>
+                    <select id="frequency">
+                        <option value="annually">Annually</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="daily">Daily</option>
+                    </select>
+                    <button class="calculate-button">Calculate</button>
+                </form>
+                <div id="compounding-result"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Financial Calculators By Nitesh</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
